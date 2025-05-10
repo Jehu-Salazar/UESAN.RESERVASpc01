@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "1c5ba690-4bda-4273-ae6c-12ae0dd1e76f",
+		"name": "Reservas de Cancha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33128315"
+	},
+	"item": [
+		{
+			"name": "get cancha",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5271/api/canchas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5271",
+					"path": [
+						"api",
+						"canchas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getcancanchapor id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5271/api/canchas/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5271",
+					"path": [
+						"api",
+						"canchas",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearcancha",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"nombre\": \"Cancha Actualizada\",\r\n  \"tipo\": \"Fútbol\",\r\n  \"ubicacion\": \"Zona D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5271/api/canchas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5271",
+					"path": [
+						"api",
+						"canchas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminarcancha",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5271/api/canchas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5271",
+					"path": [
+						"api",
+						"canchas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarcancha",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 2,\r\n  \"nombre\": \"Cancha Actualizada\",\r\n  \"tipo\": \"Fútbol\",\r\n  \"ubicacion\": \"Zona D\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5271/api/canchas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5271",
+					"path": [
+						"api",
+						"canchas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "todas las resrvas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5271/api/reservas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5271",
+					"path": [
+						"api",
+						"reservas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearreserva",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fecha\": \"2025-07-10\",\r\n  \"horaInicio\": \"10:00\",\r\n  \"horaFin\": \"11:00\",\r\n  \"clienteNombre\": \"Juan Pérez\",\r\n  \"canchaId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5271/api/reservas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5271",
+					"path": [
+						"api",
+						"reservas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actializarreeserva",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"fecha\": \"2025-07-10\",\r\n  \"horaInicio\": \"11:00\",\r\n  \"horaFin\": \"12:00\",\r\n  \"clienteNombre\": \"Juan Pérez Editado\",\r\n  \"canchaId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5271/api/reservas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5271",
+					"path": [
+						"api",
+						"reservas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminara reserva",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
