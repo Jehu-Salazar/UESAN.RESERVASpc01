@@ -14,7 +14,7 @@ namespace UESAN.RESERVASpc01.API.Controllers
     [ApiController]
     public class CanchasController : ControllerBase
 
-        // ddddddd
+        // dddddddd
     {
         private readonly ReservaDeCanchaContext _context;
 
